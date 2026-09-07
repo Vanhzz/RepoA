@@ -23,4 +23,4 @@
 ### 📬 Let's Connect
 * **Upwork:** Available for freelance data and automation projects.
 * **GitHub:** [github.com/Vanhzz](https://github.com/Vanhzz)
-* **LinkedIn** (www.linkedin.com/in/daniel-felipe-diaz-chaves-49630134a)
+* **LinkedIn** www.linkedin.com/in/daniel-felipe-diaz-chaves-49630134a
