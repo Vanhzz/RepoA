@@ -1,4 +1,4 @@
-# 🚀 WFM Automated Data Pipeline & Web Scraper
+# 🚀 Automated Data Pipeline & Web Scraper
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
@@ -12,7 +12,7 @@ This ETL (Extract, Transform, Load) pipeline is built for Operations and Workfor
 ---
 
 ## 💼 The Business Problem
-Operational leaders were losing approximately **10 hours a week** manually downloading reports, consolidating Excel files, and cross-referencing clock-in/clock-out times to measure store capacity.
+Operational leaders were losing approximately **8 hours a week** manually downloading reports, consolidating Excel files, and cross-referencing clock-in/clock-out times to measure store capacity.
 
 **The Solution:** An unattended script that logs into the operational system, extracts the raw data, and structures actual vs. planned worked hours automatically.
 
