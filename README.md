@@ -36,4 +36,6 @@ Operational leaders were losing approximately **10 hours a week** manually downl
 ---
 
 ## 🎬 Demonstration
-*(Insert your 5-second execution GIF here)*
+https://github.com/user-attachments/assets/094595ef-7f60-4e5f-abfd-a34e9d752f02
+
+https://github.com/user-attachments/assets/2f68e09e-f56a-42f6-991c-673fc3577c01
