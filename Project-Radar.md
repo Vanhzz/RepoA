@@ -1,32 +1,35 @@
-# 🤖 "Radar": Pharmacy Operations & WFM Chatbot
+# 🤖 "Radar": Pharmacy Operations Chatbot
 
-![Copilot Studio](https://img.shields.io/badge/Copilot_Studio-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
 ![Power Automate](https://img.shields.io/badge/Power_Automate-0066FF?style=for-the-badge&logo=powerautomate&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Microsoft Teams](https://img.shields.io/badge/Microsoft_Teams-6264A7?style=for-the-badge&logo=microsoftteams&logoColor=white)
+![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
 
 ## 📖 Project Overview
-"Radar" is an enterprise-grade virtual assistant integrated directly into Microsoft Teams. Designed for pharmacy operations and Workforce Management (WFM), it allows branch leaders to query real-time operational metrics and staffing KPIs using natural language, entirely bypassing the friction of traditional dashboards.
+"Radar" is an enterprise-grade virtual assistant integrated directly into Microsoft Teams, designed for pharmacy operations and branch leaders. It allows staff to query real-time operational metrics and staffing KPIs using chat commands, entirely bypassing the friction of traditional dashboards.
 
-*(Note: Specific DAX queries and proprietary operational data have been anonymized).*
+*(Note: This solution was developed and deployed in a real-world corporate environment. To protect confidential company data, this repository demonstrates the exact architecture and logic using a sanitized, mock cloud-based dataset).*
 
 ---
 
 ## 💼 The Business Problem
-Pharmacy managers were spending critical operational time away from the floor, logging into heavy Business Intelligence portals just to retrieve basic daily performance metrics and schedule adherence reports.
+Operational leaders and store managers were spending critical time away from the floor, navigating heavy reports just to retrieve basic daily performance metrics (e.g., Scheduled vs. Active staff, Productivity rates).
 
-**The Solution:** A conversational interface in Microsoft Teams that brings the data directly to the user's mobile device or desktop within seconds, formatted in clean, easy-to-read Adaptive Cards.
+**The Solution:** An automated conversational workflow that fetches specific departmental data and delivers it instantly to the user's Microsoft Teams chat in a clean, readable format.
 
 ---
 
-## ⚙️ Solution Architecture 
-This solution orchestrates multiple tools within the Microsoft Power Platform ecosystem:
+## ⚙️ Solution Architecture (Showcase Environment)
+This automation relies on Microsoft Power Automate to orchestrate data extraction and delivery:
 
-1. **User Intent (Copilot Studio):** The user asks a question in Teams (e.g., *"What are today's pharmacy operational metrics?"*). The bot identifies the intent and extracts key variables.
-2. **Orchestration (Power Automate):** A cloud flow is triggered, receiving the extracted variables from the chatbot.
-3. **Data Query (Power BI & DAX):** Power Automate executes an optimized DAX query directly against the underlying Power BI semantic model to retrieve up-to-the-minute KPIs.
-4. **UI Delivery (Adaptive Cards):** The raw data is formatted into a visually appealing JSON Adaptive Card and sent back to the user in the Teams chat.
+1. **User Input (Trigger):** The user triggers the flow and inputs the target department (e.g., "Farmacia", "Bodega").
+2. **Data Extraction:** The flow connects to a cloud-based dataset (`Metricas_Operacion.xlsx`), which simulates the real enterprise data warehouse for this demonstration.
+3. **Data Operations (Filter Array):** Power Automate dynamically filters the dataset in the background to isolate the exact metrics for the requested department.
+4. **UI Delivery (Microsoft Teams):** The flow parses the filtered data into dynamic variables and posts a structured message directly to the user via the Flow Bot in Teams.
 
 ---
 
 ## 🎬 Demonstration
-*(Añade aquí una captura de pantalla de Teams mostrando una Tarjeta Adaptativa)*
+
+
+https://github.com/user-attachments/assets/ac12a3ae-b4dc-4b23-babe-cfd2cb7cb805
+
